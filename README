@@ -1,0 +1,7 @@
+# Initexi
+
+Initialize a texinfo project with GNU manual stylesheet.
+
+## Build
+
+run `build.sh`

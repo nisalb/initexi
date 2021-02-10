@@ -1,0 +1,75 @@
+\input texinfo @c -*-texinfo-*-
+@c %**start of header
+@settitle Title of the Document
+@c %**end of header
+
+@c Change this to the projects LICENSE
+@copying
+Copyright @copyright{} 2020 Author
+
+@quotation
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+@end quotation
+@end copying
+
+@titlepage
+@title Document Title
+@subtitle Document Sub Title
+@author Author
+
+@page
+
+@c push to the bottom of the page
+@vskip 0pt plus 1filll
+@insertcopying
+
+Last Modified: @today{}
+@end titlepage
+
+@c insert TOC here
+@contents
+
+@ifnottex
+@node Top
+@top The Top Node
+
+This is sample text to display on Top node.
+@end ifnottex
+
+@menu
+* Chapter One Title: Chapter One Node Name: A Chapter Description
+* Chapter Two::                             A Chapter Description
+@end menu
+
+@c @include chapter-1.texi
+
+@node Chapter One Node Name
+@chapter Chapter One Title
+
+This is chapter one 
+
+@node Chapter Two
+@chapter Chapter Two
+
+@menu
+* Section One:: A Section Description
+@end menu
+
+@node Section One
+@section Section One
+
+This is the Section One 
+
+@node Index of Concepts
+@unnumbered Index of Contepts
+
+@printindex cp
+
+@node Index of Programs
+@unnumbered Index of Programs
+
+@printindex pg
+
+@bye
